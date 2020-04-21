@@ -1,4 +1,4 @@
-package com.shu.mpadmin;
+package com.shu.mpadmin.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.springframework.context.annotation.Bean;

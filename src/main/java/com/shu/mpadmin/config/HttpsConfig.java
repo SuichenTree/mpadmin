@@ -1,4 +1,4 @@
-package com.shu.mpadmin;//package com.example.demo;
+package com.shu.mpadmin.config;//package com.example.demo;
 //
 //import org.apache.catalina.Context;
 //import org.apache.catalina.connector.Connector;
