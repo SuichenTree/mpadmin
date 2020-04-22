@@ -55,8 +55,19 @@ public class MpUserApi {
             json.put("isAdmin",1);
             json.put("userId",one.getId());
             json.put("userName",one.getName());
-            json.put("password",one.getPassword());
-            json.put("headURL",one.getHeadUrl());
+            json.put("passWord",one.getPassword());
+            json.put("headUrl",one.getHeadUrl());
+            if(one.getGender()==null || one.getGender() == 0) {
+                json.put("gender", "未知");
+            }else if(one.getGender()==1){
+                json.put("gender","男");
+            }else if(one.getGender()==2){
+                json.put("gender","女");
+            }
+            json.put("age",one.getAge());
+            json.put("phone",one.getPhone());
+            json.put("email",one.getEmail());
+            json.put("address",one.getAddress());
         }else{
             json.put("isAdmin",0);
         }
