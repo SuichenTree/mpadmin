@@ -1,3 +1,103 @@
-2020-04-22 00:25:57 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=123456
-2020-04-22 00:34:13 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=123456
-2020-04-22 00:35:10 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-12 11:36:28 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 10952 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-12 11:36:28 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-12 11:36:29 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-12 11:36:29 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-12 11:36:33 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 443 (https)
+2020-04-12 11:36:33 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-12 11:36:33 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-12 11:36:33 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-12 11:36:33 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4421 ms
+2020-04-12 11:36:35 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-12 11:36:36 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-12 11:36:37 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 443 (https) with context path ''
+2020-04-12 11:36:37 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 10.152 seconds (JVM running for 13.896)
+2020-04-12 11:39:50 [https-jsse-nio-443-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-12 11:39:50 [https-jsse-nio-443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-12 11:39:50 [https-jsse-nio-443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 7 ms
+2020-04-12 11:39:50 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -/shu/user/initUserInfo,初始化用户接口,参数 code=0236irpK1m3Ea20OaQoK1G1epK16irpg,head = https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,name=suichen😀Tree,gender=1,address=null
+2020-04-12 11:39:51 [https-jsse-nio-443-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-12 11:39:51 [https-jsse-nio-443-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-12 11:39:52 [https-jsse-nio-443-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-12 11:39:52 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -用户登录数据库,更新用户数据
+2020-04-12 11:44:41 [https-jsse-nio-443-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/getExamList,获取测试列表接口
+2020-04-12 11:44:43 [https-jsse-nio-443-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/getQuestionList,获取问题接口,参数：examId = 1
+2020-04-12 11:44:43 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/getExamPageNo,获取测试进度接口,参数：examId = 1, userId = 10
+2020-04-12 11:44:47 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=1, optionId=7,pageNo=1
+2020-04-12 11:44:47 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -之前的测试都做完了。创建新的测试记录
+2020-04-12 11:44:48 [https-jsse-nio-443-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=2, optionId=10,pageNo=2
+2020-04-12 11:44:48 [https-jsse-nio-443-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:44:50 [https-jsse-nio-443-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=3, optionId=16,pageNo=3
+2020-04-12 11:44:50 [https-jsse-nio-443-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:03 [https-jsse-nio-443-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=4, optionId=18,pageNo=4
+2020-04-12 11:45:03 [https-jsse-nio-443-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:06 [https-jsse-nio-443-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=5, optionId=23,pageNo=5
+2020-04-12 11:45:06 [https-jsse-nio-443-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:08 [https-jsse-nio-443-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=6, optionId=25,pageNo=6
+2020-04-12 11:45:08 [https-jsse-nio-443-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:10 [https-jsse-nio-443-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=7, optionId=28,pageNo=7
+2020-04-12 11:45:10 [https-jsse-nio-443-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:12 [https-jsse-nio-443-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=8, optionId=33,pageNo=8
+2020-04-12 11:45:12 [https-jsse-nio-443-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:13 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=9, optionIds=[Ljava.lang.Integer;@648295cd,pageNo=9
+2020-04-12 11:45:13 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[36], 正确选项：[37, 38], isSame=false
+2020-04-12 11:45:13 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:16 [https-jsse-nio-443-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=10, optionIds=[Ljava.lang.Integer;@4cbd4879,pageNo=10
+2020-04-12 11:45:16 [https-jsse-nio-443-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[40, 41], 正确选项：[41, 42], isSame=false
+2020-04-12 11:45:16 [https-jsse-nio-443-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:19 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=11, optionIds=[Ljava.lang.Integer;@3c5fa91e,pageNo=11
+2020-04-12 11:45:19 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[45, 43], 正确选项：[44, 45, 46], isSame=false
+2020-04-12 11:45:19 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:21 [https-jsse-nio-443-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=12, optionId=49,pageNo=12
+2020-04-12 11:45:21 [https-jsse-nio-443-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:26 [https-jsse-nio-443-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=13, optionId=54,pageNo=13
+2020-04-12 11:45:26 [https-jsse-nio-443-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:28 [https-jsse-nio-443-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=14, optionId=58,pageNo=14
+2020-04-12 11:45:28 [https-jsse-nio-443-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:31 [https-jsse-nio-443-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=15, optionId=61,pageNo=15
+2020-04-12 11:45:31 [https-jsse-nio-443-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:33 [https-jsse-nio-443-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=16, optionId=64,pageNo=16
+2020-04-12 11:45:33 [https-jsse-nio-443-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:35 [https-jsse-nio-443-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=17, optionId=67,pageNo=17
+2020-04-12 11:45:35 [https-jsse-nio-443-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:38 [https-jsse-nio-443-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=18, optionIds=[Ljava.lang.Integer;@72516cac,pageNo=18
+2020-04-12 11:45:38 [https-jsse-nio-443-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[70, 71, 72], 正确选项：[69, 70, 72], isSame=false
+2020-04-12 11:45:38 [https-jsse-nio-443-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:42 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=19, optionIds=[Ljava.lang.Integer;@5b490bbd,pageNo=19
+2020-04-12 11:45:42 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[74, 75, 76, 73], 正确选项：[73, 74, 75, 76], isSame=true
+2020-04-12 11:45:42 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:45 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=20, optionIds=[Ljava.lang.Integer;@129b5b9e,pageNo=20
+2020-04-12 11:45:45 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[80, 77], 正确选项：[77, 79], isSame=false
+2020-04-12 11:45:45 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:48 [https-jsse-nio-443-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=21, optionId=83,pageNo=21
+2020-04-12 11:45:48 [https-jsse-nio-443-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:51 [https-jsse-nio-443-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=22, optionId=86,pageNo=22
+2020-04-12 11:45:51 [https-jsse-nio-443-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:45:56 [https-jsse-nio-443-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=23, optionId=91,pageNo=23
+2020-04-12 11:45:56 [https-jsse-nio-443-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:46:00 [https-jsse-nio-443-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=24, optionIds=[Ljava.lang.Integer;@5579d009,pageNo=24
+2020-04-12 11:46:00 [https-jsse-nio-443-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[95, 94], 正确选项：[94, 96], isSame=false
+2020-04-12 11:46:00 [https-jsse-nio-443-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:46:04 [https-jsse-nio-443-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=25, optionIds=[Ljava.lang.Integer;@5479d3e5,pageNo=25
+2020-04-12 11:46:04 [https-jsse-nio-443-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[99], 正确选项：[98, 99], isSame=false
+2020-04-12 11:46:04 [https-jsse-nio-443-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:46:07 [https-jsse-nio-443-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=26, optionId=102,pageNo=26
+2020-04-12 11:46:07 [https-jsse-nio-443-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:46:09 [https-jsse-nio-443-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=27, optionId=107,pageNo=27
+2020-04-12 11:46:09 [https-jsse-nio-443-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:46:11 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=28, optionId=110,pageNo=28
+2020-04-12 11:46:11 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:46:14 [https-jsse-nio-443-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/danxue_Answer,单选题答题接口，参数：userId=10,examId=1, questionId=29, optionId=115,pageNo=29
+2020-04-12 11:46:14 [https-jsse-nio-443-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:46:16 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/duoxue_Answer,多选题答题接口，参数：userId=10,examId=1, questionId=30, optionIds=[Ljava.lang.Integer;@53ecc6d0,pageNo=30
+2020-04-12 11:46:16 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -用户选择的选项:[119, 117], 正确选项：[118, 119], isSame=false
+2020-04-12 11:46:16 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -该用户测试尚未做完.继续做测试
+2020-04-12 11:46:16 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -该用户做到最后一题
+2020-04-12 11:46:18 [https-jsse-nio-443-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/result,测试结果接口，参数：userId=10,examId=1
+2020-04-12 11:46:18 [https-jsse-nio-443-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/questionAnalyse,答案分析接口。参数：userId = 10,examId = 1
+2020-04-12 11:46:28 [https-jsse-nio-443-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/optionAnalyse,用户选择的选项分析接口,参数：questionId=1
+2020-04-12 11:46:30 [https-jsse-nio-443-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/optionAnalyse,用户选择的选项分析接口,参数：questionId=25
+2020-04-12 11:46:31 [https-jsse-nio-443-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/optionAnalyse,用户选择的选项分析接口,参数：questionId=26
+2020-04-12 11:46:33 [https-jsse-nio-443-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/optionAnalyse,用户选择的选项分析接口,参数：questionId=29
+2020-04-12 11:46:33 [https-jsse-nio-443-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -/shu/exam/optionAnalyse,用户选择的选项分析接口,参数：questionId=30
+2020-04-12 11:47:06 [https-jsse-nio-443-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -/shu/user/initUserInfo,初始化用户接口,参数 code=043Y7WdJ1cME710QedbJ1JGCdJ1Y7Wd6,head = https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,name=suichen😀Tree,gender=1,address=null
+2020-04-12 11:47:07 [https-jsse-nio-443-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -用户登录数据库,更新用户数据
