@@ -1,29 +1,942 @@
-2020-04-23 00:03:41 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=123456
-2020-04-23 00:03:48 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=123456
-2020-04-23 00:03:51 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
-2020-04-23 00:04:34 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
-2020-04-23 00:09:42 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
-2020-04-23 00:10:01 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:11:30 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:15:07 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:15:25 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:15:43 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:15:48 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:16:04 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:26:23 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
-2020-04-23 00:26:27 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:27:27 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:27:45 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:27:49 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:29:03 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:30:04 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:30:15 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:31:05 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
-2020-04-23 00:31:16 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:32:43 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:33:32 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:33:34 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:33:36 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:33:38 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:33:56 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
-2020-04-23 00:33:58 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:04:18 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 7144 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 11:04:18 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 11:04:18 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 11:04:18 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 11:04:21 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 11:04:21 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 11:04:21 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 11:04:21 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 11:04:21 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3243 ms
+2020-04-30 11:04:23 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 11:04:23 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:04:23 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 11:04:23 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 11:04:23 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 11:04:24 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 11:04:25 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 11:04:25 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 8.107 seconds (JVM running for 12.37)
+2020-04-30 11:10:36 [https-jsse-nio-9090-exec-5] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 11:10:36 [https-jsse-nio-9090-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:10:36 [https-jsse-nio-9090-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 12 ms
+2020-04-30 11:10:36 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
+2020-04-30 11:10:36 [https-jsse-nio-9090-exec-5] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 11:10:36 [https-jsse-nio-9090-exec-5] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 11:10:36 [https-jsse-nio-9090-exec-5] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 11:10:42 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:10:43 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:10:44 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:10:45 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:10:47 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:10:49 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:11:02 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:15:56 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:17:13 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:17:17 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:18:14 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:18:37 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:21:35 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:21:50 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:22:16 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:22:48 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:22:56 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:25:27 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:25:55 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:30:13 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:31:05 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:37:15 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:38:28 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 11:40:06 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 14:43:25 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 15888 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 14:43:25 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 14:43:25 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 14:43:25 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 14:43:26 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 14:43:26 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 14:43:26 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 14:43:26 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 14:43:26 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1676 ms
+2020-04-30 14:43:27 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 14:43:28 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 14:43:28 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 14:43:28 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 14:43:28 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 14:43:28 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 14:43:29 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 14:43:29 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 4.778 seconds (JVM running for 6.718)
+2020-04-30 14:52:09 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 14:52:09 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 14:52:09 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 11 ms
+2020-04-30 14:52:09 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
+2020-04-30 14:52:09 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 14:52:09 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 14:52:09 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 14:52:12 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 14:52:24 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 14:52:29 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 14:54:09 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 15:04:08 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 15:07:11 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 15:18:49 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 15:19:02 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 15:19:08 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 15:19:22 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 15:19:34 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 15:51:39 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 11732 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 15:51:39 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 15:51:39 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 15:51:39 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 15:51:41 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 15:51:41 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 15:51:41 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 15:51:41 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 15:51:41 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1825 ms
+2020-04-30 15:51:42 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 15:51:42 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:51:42 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 15:51:42 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 15:51:42 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 15:51:42 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 15:51:43 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 15:51:43 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 4.454 seconds (JVM running for 6.655)
+2020-04-30 15:51:59 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 15:51:59 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 15:51:59 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 6 ms
+2020-04-30 15:51:59 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 15:51:59 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 15:51:59 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 15:52:00 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 15:52:49 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:04:10 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:05:45 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:06:42 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:06:59 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 4108 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 16:06:59 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 16:07:00 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 16:07:00 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 16:07:01 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 16:07:01 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 16:07:01 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 16:07:01 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 16:07:01 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1877 ms
+2020-04-30 16:07:02 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 16:07:02 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:07:02 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 16:07:02 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 16:07:02 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 16:07:03 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 16:07:03 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 16:07:03 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 4.458 seconds (JVM running for 6.057)
+2020-04-30 16:16:19 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 16:16:19 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:16:19 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 7 ms
+2020-04-30 16:16:19 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:16:19 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 16:16:19 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 16:16:19 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 16:16:38 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:17:11 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:17:55 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:17:58 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:18:40 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
+2020-04-30 16:18:42 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 16:18:43 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:20:01 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:20:01 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:20:06 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:20:51 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:20:51 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:23:08 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:24:15 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:24:15 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:25:43 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 6424 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 16:25:43 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 16:25:43 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 16:25:43 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 16:25:46 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 16:25:46 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 16:25:46 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 16:25:46 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 16:25:46 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2925 ms
+2020-04-30 16:25:47 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 16:25:48 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:25:48 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 16:25:48 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 16:25:48 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 16:25:48 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 16:25:49 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 16:25:49 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 6.472 seconds (JVM running for 8.941)
+2020-04-30 16:26:45 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 6456 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 16:26:45 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 16:26:45 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 16:26:45 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 16:26:49 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 16:26:49 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 16:26:49 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 16:26:49 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 16:26:49 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3899 ms
+2020-04-30 16:26:50 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 16:26:51 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:26:51 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 16:26:51 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 16:26:51 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 16:26:51 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 16:26:52 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 16:26:52 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 8.035 seconds (JVM running for 10.521)
+2020-04-30 16:27:39 [https-jsse-nio-9090-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 16:27:39 [https-jsse-nio-9090-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:27:39 [https-jsse-nio-9090-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 9 ms
+2020-04-30 16:27:39 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:27:39 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:27:39 [https-jsse-nio-9090-exec-8] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 16:27:39 [https-jsse-nio-9090-exec-8] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 16:27:39 [https-jsse-nio-9090-exec-8] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 16:27:53 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:29:24 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:29:45 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:33:12 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 16:35:47 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:02:37 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:03:09 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:03:13 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:03:25 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:03:38 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:15:42 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:16:23 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:19:41 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:19:44 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:19:45 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:19:47 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:20:10 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:31:11 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 9616 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 17:31:11 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 17:31:12 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 17:31:12 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 17:31:14 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 17:31:14 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 17:31:14 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 17:31:15 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 17:31:15 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2951 ms
+2020-04-30 17:31:16 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 17:31:16 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 17:31:16 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 17:31:16 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 17:31:16 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 17:31:16 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 17:31:17 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 17:31:17 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 6.429 seconds (JVM running for 9.402)
+2020-04-30 17:32:10 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 17:32:10 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 17:32:10 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 30 ms
+2020-04-30 17:32:10 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:32:10 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 17:32:10 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 17:32:11 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 17:35:49 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:36:25 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:36:31 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:36:41 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=18271801652,age=26,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 17:36:41 [https-jsse-nio-9090-exec-10] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+### The error may exist in com/shu/mpadmin/mapper/MpUserMapper.java (best guess)
+### The error may involve com.shu.mpadmin.mapper.MpUserMapper.updateById-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE mp_user  SET address=?, gender=?,  head_url=?,    password=?, phone=?, name=?, email=?, age=?  WHERE id=?
+### Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1] with root cause
+java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy135.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy133.update(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:54)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy85.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:63)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61)
+	at com.sun.proxy.$Proxy101.updateById(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy102.updateById(Unknown Source)
+	at com.shu.mpadmin.controller.admin.MpUserApi.updateUserInfo(MpUserApi.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-04-30 17:39:11 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 15452 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 17:39:11 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 17:39:11 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 17:39:11 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 17:39:14 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 17:39:14 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 17:39:14 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 17:39:14 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 17:39:14 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2871 ms
+2020-04-30 17:39:15 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 17:39:15 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 17:39:15 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 17:39:16 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 17:39:16 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 17:39:16 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 17:39:17 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 17:39:17 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 6.625 seconds (JVM running for 9.094)
+2020-04-30 17:39:29 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 17:39:29 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 17:39:29 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 23 ms
+2020-04-30 17:39:29 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:39:29 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 17:39:29 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 17:39:29 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 17:39:34 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=18271801652,age=26,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 17:39:34 [https-jsse-nio-9090-exec-5] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+### The error may exist in com/shu/mpadmin/mapper/MpUserMapper.java (best guess)
+### The error may involve com.shu.mpadmin.mapper.MpUserMapper.updateById-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE mp_user  SET address=?, gender=?,  head_url=?,    password=?, phone=?, name=?, email=?, age=?  WHERE id=?
+### Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1] with root cause
+java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy134.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy132.update(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:54)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy85.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:63)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61)
+	at com.sun.proxy.$Proxy101.updateById(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy102.updateById(Unknown Source)
+	at com.shu.mpadmin.controller.admin.MpUserApi.updateUserInfo(MpUserApi.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-04-30 17:43:29 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=18271801652,age=26,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 17:43:29 [https-jsse-nio-9090-exec-9] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+### The error may exist in com/shu/mpadmin/mapper/MpUserMapper.java (best guess)
+### The error may involve com.shu.mpadmin.mapper.MpUserMapper.updateById-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE mp_user  SET address=?, gender=?,  head_url=?,    password=?, phone=?, name=?, email=?, age=?  WHERE id=?
+### Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1] with root cause
+java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x80Tr...' for column 'name' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy134.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy132.update(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:54)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy85.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:63)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61)
+	at com.sun.proxy.$Proxy101.updateById(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy102.updateById(Unknown Source)
+	at com.shu.mpadmin.controller.admin.MpUserApi.updateUserInfo(MpUserApi.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-04-30 17:45:45 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 17116 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 17:45:45 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 17:45:45 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 17:45:45 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 17:45:47 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 17:45:47 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 17:45:47 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 17:45:47 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 17:45:47 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1942 ms
+2020-04-30 17:45:48 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 17:45:48 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 17:45:48 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 17:45:49 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 17:45:49 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 17:45:49 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 17:45:50 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 17:45:50 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 4.98 seconds (JVM running for 6.998)
+2020-04-30 17:46:20 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 17:46:20 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 17:46:20 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 6 ms
+2020-04-30 17:46:20 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=18271801652,age=26,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 17:46:20 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 17:46:20 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 17:46:20 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 17:47:16 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 13480 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 17:47:16 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 17:47:16 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 17:47:16 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 17:47:19 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 17:47:19 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 17:47:19 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 17:47:19 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 17:47:19 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3683 ms
+2020-04-30 17:47:21 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 17:47:21 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 17:47:21 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 17:47:21 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 17:47:22 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 17:47:22 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 17:47:23 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 17:47:23 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 8.319 seconds (JVM running for 10.955)
+2020-04-30 17:47:23 [https-jsse-nio-9090-exec-7] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 17:47:23 [https-jsse-nio-9090-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 17:47:23 [https-jsse-nio-9090-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 8 ms
+2020-04-30 17:47:23 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:47:23 [https-jsse-nio-9090-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 17:47:23 [https-jsse-nio-9090-exec-7] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 17:47:23 [https-jsse-nio-9090-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 17:51:06 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:51:57 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
+2020-04-30 17:52:00 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:52:04 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:52:12 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=18271801652,age=27,gender=2,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 17:52:45 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:53:02 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:53:05 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:53:23 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=25,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 17:53:23 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:54:36 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:54:37 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:54:39 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:54:40 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:54:41 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:54:42 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:54:44 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:54:45 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:54:46 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:54:49 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:54:50 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:54:50 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:54:55 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 17:55:03 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 17:55:05 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:48:46 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 11300 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 18:48:46 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 18:48:46 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 18:48:46 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 18:48:48 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 18:48:48 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 18:48:48 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 18:48:48 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 18:48:48 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1905 ms
+2020-04-30 18:48:49 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 18:48:49 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 18:48:49 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 18:48:49 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 18:48:49 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 18:48:49 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 18:48:50 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 18:48:50 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 5.023 seconds (JVM running for 7.843)
+2020-04-30 18:49:31 [https-jsse-nio-9090-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 18:49:31 [https-jsse-nio-9090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 18:49:31 [https-jsse-nio-9090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 12 ms
+2020-04-30 18:50:48 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:50:48 [https-jsse-nio-9090-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 18:50:48 [https-jsse-nio-9090-exec-7] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 18:50:48 [https-jsse-nio-9090-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 18:50:50 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 18:51:04 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=25,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 18:51:04 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:51:11 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 18:51:49 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:51:51 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 18:51:56 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=25,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 18:51:56 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:53:18 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:53:19 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 18:53:23 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=25,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 18:53:23 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:53:57 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 17572 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 18:53:57 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 18:53:57 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 18:53:57 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 18:54:00 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 18:54:00 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 18:54:00 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 18:54:00 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 18:54:00 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2914 ms
+2020-04-30 18:54:02 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 18:54:02 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 18:54:02 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 18:54:02 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 18:54:02 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 18:54:02 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 18:54:03 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 18:54:03 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 7.136 seconds (JVM running for 9.605)
+2020-04-30 18:54:08 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 18:54:08 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 18:54:08 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 9 ms
+2020-04-30 18:54:08 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 18:54:08 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 18:54:08 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 18:54:08 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 18:54:10 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:54:11 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 18:54:14 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=25,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 18:54:14 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:54:48 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 18:54:51 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=25,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 18:54:51 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 18:55:18 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 18:55:25 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=25,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 18:55:25 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:00:06 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
+2020-04-30 19:00:09 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:00:11 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:00:19 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=26,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:00:19 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:00:22 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:00:24 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=27,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:00:24 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:00:46 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:00:48 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=27,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:00:48 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:23:45 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:23:46 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:23:53 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=27,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:23:53 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:23:55 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:24:28 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:24:30 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:24:32 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:25:18 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=27,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:25:19 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:25:24 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:25:26 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=27,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:25:26 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:26:07 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:30:47 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:30:58 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=27,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:30:58 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:31:00 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:31:32 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=27,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:31:32 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:31:34 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:31:59 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:32:51 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:33:01 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:34:10 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=10,headUrl=https://wx.qlogo.cn/mmopen/vi_32/ibJAkNRkv7u5Vezqic0RTvnc7mS6KJHknrg91nVVqxAEmOTlkqkdgppSxtotH6LicT0H7ibvXwwxiaWe0lAQyWUtibYA/132,userName=suichen😀Tree,passWord=,phone=13164168624,age=27,gender=1,address=广西壮族自治区,南宁市,兴宁区,email=18271801652@55.com
+2020-04-30 19:34:10 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:34:17 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:35:16 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:42:34 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:42:37 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 10
+2020-04-30 19:42:38 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:43:51 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:45:34 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:46:20 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:46:35 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:47:37 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:48:01 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:49:52 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:56:21 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:58:07 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 19:58:21 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 20:04:43 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 20:05:36 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 21:30:52 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 21:52:37 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:10:48 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 16704 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 22:10:48 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 22:10:49 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 22:10:49 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 22:10:53 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 22:10:53 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 22:10:53 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 22:10:53 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 22:10:53 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4038 ms
+2020-04-30 22:10:55 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 22:10:55 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 22:10:55 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 22:10:55 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 22:10:56 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 22:10:56 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 22:10:58 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 22:10:58 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 10.865 seconds (JVM running for 14.244)
+2020-04-30 22:18:28 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 22:18:28 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 22:18:28 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 21 ms
+2020-04-30 22:18:28 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='d', phone='1', password='d', headUrl='null', age=15, gender=1, address='d', email='d', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:18:28 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 22:18:28 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 22:18:28 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 22:18:28 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:19:22 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:19:48 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:20:00 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:20:07 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -获取单个用户信息,userId = 17
+2020-04-30 22:20:15 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -/shu/admin/user,更新单个用户。参数：userId=17,headUrl=undefined,userName=d,passWord=,phone=128321312,age=15,gender=1,address=d,email=d
+2020-04-30 22:20:15 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:23:09 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:23:34 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:28:54 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:28:57 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:29:01 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 17
+2020-04-30 22:30:23 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 8992 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 22:30:23 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 22:30:23 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 22:30:23 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 22:30:25 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 22:30:25 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 22:30:25 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 22:30:25 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 22:30:25 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2482 ms
+2020-04-30 22:30:26 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 22:30:26 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 22:30:26 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 22:30:27 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 22:30:27 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 22:30:27 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 22:30:28 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 22:30:28 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 5.696 seconds (JVM running for 8.448)
+2020-04-30 22:31:29 [https-jsse-nio-9090-exec-7] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 22:31:29 [https-jsse-nio-9090-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 22:31:29 [https-jsse-nio-9090-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 18 ms
+2020-04-30 22:31:29 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:31:29 [https-jsse-nio-9090-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 22:31:29 [https-jsse-nio-9090-exec-7] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 22:31:29 [https-jsse-nio-9090-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 22:31:58 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=1, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:31:58 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:32:02 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 18
+2020-04-30 22:32:11 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:32:26 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:32:26 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:32:34 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 19
+2020-04-30 22:33:26 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Starting MpadminApplication on DESKTOP-PLOGNTV with PID 620 (D:\IDEA_WORK\mpadmin\target\classes started by Administrator in D:\IDEA_WORK\mpadmin)
+2020-04-30 22:33:26 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -No active profile set, falling back to default profiles: default
+2020-04-30 22:33:26 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 22:33:26 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 22:33:29 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9090 (https)
+2020-04-30 22:33:29 [restartedMain] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-30 22:33:29 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 22:33:29 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-30 22:33:29 [restartedMain] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2513 ms
+2020-04-30 22:33:30 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-30 22:33:30 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 22:33:30 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2020-04-30 22:33:30 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2020-04-30 22:33:30 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-04-30 22:33:30 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2020-04-30 22:33:32 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9090 (https) with context path ''
+2020-04-30 22:33:32 [restartedMain] INFO  com.shu.mpadmin.MpadminApplication -Started MpadminApplication in 6.156 seconds (JVM running for 8.018)
+2020-04-30 22:33:40 [https-jsse-nio-9090-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 22:33:40 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-30 22:33:40 [https-jsse-nio-9090-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 11 ms
+2020-04-30 22:33:40 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:33:40 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2020-04-30 22:33:40 [https-jsse-nio-9090-exec-4] WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-30 22:33:40 [https-jsse-nio-9090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2020-04-30 22:34:01 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:34:01 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:34:08 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 20
+2020-04-30 22:36:30 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:37:16 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:37:21 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:37:21 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:37:25 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 21
+2020-04-30 22:37:31 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:40:11 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:41:08 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:45:08 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:45:12 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:45:20 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:45:20 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:45:24 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 22
+2020-04-30 22:47:21 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:47:59 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:47:59 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:48:02 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 23
+2020-04-30 22:48:03 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:51:28 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:51:35 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:51:35 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:51:45 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 24
+2020-04-30 22:55:50 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:56:14 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
+2020-04-30 22:56:19 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:56:24 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 22:56:25 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 22:56:30 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 25
+2020-04-30 22:56:48 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:04:21 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:04:43 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:05:06 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:05:15 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 23:05:16 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:05:19 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 26
+2020-04-30 23:05:33 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:05:43 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 23:05:44 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:05:57 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 27
+2020-04-30 23:06:21 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:11:17 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:12:03 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台登录接口,/shu/admin/login,参数：userName = suichen, passWord=1234567
+2020-04-30 23:12:05 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:12:22 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 23:12:22 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:12:25 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 28
+2020-04-30 23:13:37 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:13:41 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:13:46 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='2', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 23:13:47 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:13:56 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 29
+2020-04-30 23:13:56 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:14:05 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:16:20 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:17:10 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:23:14 [https-jsse-nio-9090-exec-5] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:25:21 [https-jsse-nio-9090-exec-10] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:25:28 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:25:42 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 23:25:42 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:25:45 [https-jsse-nio-9090-exec-4] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 30
+2020-04-30 23:26:30 [https-jsse-nio-9090-exec-7] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:26:42 [https-jsse-nio-9090-exec-6] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:26:50 [https-jsse-nio-9090-exec-8] INFO  com.shu.mpadmin.controller.MpUserController -新增单个用户/shu/admin/user,参数 user = UserEntity{id=null, name='1', phone='', password='', headUrl='null', age=15, gender=null, address='', email='', loginCount=null, lastLoginTime=null, isAdmin=0, openId='null', unionId='null'}
+2020-04-30 23:26:50 [https-jsse-nio-9090-exec-9] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:26:55 [https-jsse-nio-9090-exec-1] INFO  com.shu.mpadmin.controller.MpUserController -删除单个用户/shu/admin/user,userId = 31
+2020-04-30 23:26:55 [https-jsse-nio-9090-exec-3] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser
+2020-04-30 23:27:33 [https-jsse-nio-9090-exec-2] INFO  com.shu.mpadmin.controller.MpUserController -后台用户列表接口,/shu/admin/getAllUser

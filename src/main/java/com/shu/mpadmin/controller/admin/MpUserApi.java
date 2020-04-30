@@ -57,12 +57,12 @@ public class MpUserApi {
             json.put("userName",one.getName());
             json.put("passWord",one.getPassword());
             json.put("headUrl",one.getHeadUrl());
-            if(one.getGender()==null || one.getGender() == 0) {
-                json.put("gender", "未知");
+            if(one.getGender()==null) {
+                json.put("gender", 0);
             }else if(one.getGender()==1){
-                json.put("gender","男");
+                json.put("gender",1);
             }else if(one.getGender()==2){
-                json.put("gender","女");
+                json.put("gender",2);
             }
             json.put("age",one.getAge());
             json.put("phone",one.getPhone());
@@ -141,7 +141,115 @@ public class MpUserApi {
         return json.toString();
     }
 
+    @ApiOperation("修改用户个人信息")
+    @PutMapping("/shu/admin/updateUserInfo")
+    public String updateUserInfo(Integer userId,String headUrl,String userName,String passWord,
+                                 String phone,Integer age,Integer gender,String address,String email){
+        logger.info("/shu/admin/updateUserInfo,修改用户个人信息接口。参数：userId="+userId+",headUrl="+headUrl+",userName="+userName+",passWord="+passWord
+        +",phone="+phone+",age="+age+",gender="+gender+",address="+address+",email="+email);
+        //将emoji符号转换为字符
+        String s_name = EmojiParser.parseToAliases(userName);
+        MpUser one = new MpUser();
+        one.setId(userId);
+        one.setName(s_name);
+        one.setAddress(address);
+        one.setGender(gender);
+        one.setHeadUrl(headUrl);
+        one.setPhone(phone);
+        one.setPassword(passWord);
+        one.setAge(age);
+        one.setEmail(email);
+        int i = userMapper.updateById(one);
+        JSONObject json = new JSONObject();
+        if(i==1){
+            json.put("isSuccess",1);
+        }else{
+            json.put("isSuccess",0);
+        }
+        return json.toString();
+    }
 
+    @ApiOperation("获取单个用户信息")
+    @GetMapping("/shu/admin/user")
+    public String getUser(Integer userId){
+        logger.info("获取单个用户信息,userId = "+userId);
+        JSONObject json = new JSONObject();
+        MpUser one = userMapper.selectById(userId);
+        if(one!=null){
+            json.put("isSuccess",1);
+            json.put("headUrl",one.getHeadUrl());
+            json.put("userId",one.getId());
+            json.put("passWord",one.getPassword());
+            //对用户昵称中的emoj表情进行转码
+            String s_name = EmojiParser.parseToUnicode(one.getName());
+            json.put("userName",s_name);
+            json.put("gender",one.getGender());
+            json.put("isAdmin",one.getIsAdmin());
+            json.put("age",one.getAge());
+            json.put("phone",one.getPhone());
+            json.put("email",one.getEmail());
+            json.put("address",one.getAddress());
+            return json.toString();
+        }else{
+            json.put("isSuccess",0);
+            return json.toString();
+        }
+    }
 
+    @ApiOperation("删除单个用户")
+    @DeleteMapping("/shu/admin/user")
+    public String deleteUser(Integer userId){
+        logger.info("删除单个用户/shu/admin/user,userId = "+userId);
+        JSONObject json = new JSONObject();
+        int i = userMapper.deleteById(userId);
+        if(i==1){
+            json.put("isSuccess",1);
+        }else{
+            json.put("isSuccess",0);
+        }
+        return json.toString();
+    }
 
+    @ApiOperation("新增单个用户")
+    @PostMapping("/shu/admin/user")
+    public String postUser(MpUser user){
+       logger.info("新增单个用户/shu/admin/user,参数 user = "+user.toString());
+       JSONObject json=new JSONObject();
+        int a = userMapper.insert(user);
+        if (a==1){
+            json.put("isSuccess",1);
+        }else{
+            json.put("isSuccess",0);
+        }
+        return json.toString();
+    }
+
+    @ApiOperation("更新单个用户")
+    @PutMapping("/shu/admin/user")
+    public String putUser(Integer userId,String headUrl,String userName,String passWord,
+                          String phone,Integer age,Integer gender,String address,String email,Integer isAdmin){
+        logger.info("/shu/admin/user,更新单个用户。参数：userId="+userId+",headUrl="+headUrl+",userName="+userName+",passWord="+passWord
+                +",phone="+phone+",age="+age+",gender="+gender+",address="+address+",email="+email);
+        //将emoji符号转换为字符
+        String s_name = EmojiParser.parseToAliases(userName);
+        MpUser one = new MpUser();
+        one.setId(userId);
+        one.setName(s_name);
+        one.setAddress(address);
+        one.setGender(gender);
+        one.setHeadUrl(headUrl);
+        one.setPhone(phone);
+        one.setPassword(passWord);
+        one.setAge(age);
+        one.setEmail(email);
+        one.setIsAdmin(isAdmin);
+        int i = userMapper.updateById(one);
+        JSONObject json = new JSONObject();
+        if(i==1){
+            json.put("isSuccess",1);
+        }else{
+            json.put("isSuccess",0);
+        }
+        return json.toString();
+    }
 }
