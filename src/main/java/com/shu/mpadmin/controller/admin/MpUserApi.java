@@ -19,9 +19,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-@Api(tags = "后台用户管理接口")
+@Api(tags = "后台系统-用户管理接口")
 @RestController
 @CrossOrigin
 public class MpUserApi {
@@ -101,13 +103,21 @@ public class MpUserApi {
         return json.toString();
     }
 
-    @ApiOperation("获取所有用户信息")
+    /**
+     * 分页查询所有用户信息
+     * @param currentPage 查询当前页的数据
+     * @param pageSize    每页包含多少条数据
+     * @return
+     * @throws JSONException
+     */
+    @ApiOperation("分页查询所有用户信息")
     @GetMapping("/shu/admin/getAllUser")
-    public String getAllUser() throws JSONException {
-        logger.info("后台用户列表接口,/shu/admin/getAllUser");
+    public String getAllUser(Integer currentPage,Integer pageSize) throws JSONException {
+        logger.info("分页查询所有用户信息,/shu/admin/getAllUser，param: currentPage="+currentPage+", pageSize="+pageSize);
         JSONObject json=new JSONObject();
         Page<MpUser> page=new Page<>();
-        page.setSize(10);
+        page.setSize(pageSize);
+        page.setCurrent(currentPage);
         IPage<MpUser> selectPage = userMapper.selectPage(page, null);
         List<MpUser> records = selectPage.getRecords();
         JSONArray jsonArray = new JSONArray();
@@ -210,6 +220,30 @@ public class MpUserApi {
         return json.toString();
     }
 
+    @ApiOperation("批量删除用户")
+    @DeleteMapping("/shu/admin/deleteUsers")
+    public String deleteUsers(String userIds){
+        logger.info("批量删除用户/shu/admin/deleteUsers,userIds = "+userIds);
+        JSONObject json = new JSONObject(userIds);
+        List<Integer> userIdList = new ArrayList<>();
+        Iterator iterator = json.keys();
+        String key = null;
+        while(iterator.hasNext()){
+            key = (String) iterator.next();
+            userIdList.add(json.getInt(key));
+        }
+        JSONObject jsonObject =new JSONObject();
+        try{
+            for(Integer i:userIdList){
+                userMapper.deleteById(i);
+            }
+            jsonObject.put("isSuccess",1);
+        }catch (Exception e){
+            jsonObject.put("isSuccess",0);
+        }
+        return jsonObject.toString();
+    }
+
     @ApiOperation("新增单个用户")
     @PostMapping("/shu/admin/user")
     public String postUser(MpUser user){
@@ -252,4 +286,7 @@ public class MpUserApi {
         }
         return json.toString();
     }
+
+
+
 }

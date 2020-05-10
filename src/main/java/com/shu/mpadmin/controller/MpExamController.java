@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.shu.mpadmin.entity.*;
 import com.shu.mpadmin.mapper.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -20,6 +22,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+@Api(tags = "微信小程序-测试Exam接口")
 @RestController
 public class MpExamController {
     //日志记录器
@@ -40,6 +43,7 @@ public class MpExamController {
      * 获取所有测试列表
      * @return
      */
+    @ApiOperation("获取所有测试列表")
     @PostMapping("/shu/exam/getExamList")
     public String getExamList() throws JSONException, JsonProcessingException {
         logger.info("/shu/exam/getExamList,获取测试列表接口");
@@ -65,6 +69,7 @@ public class MpExamController {
      * @return
      * @throws JSONException
      */
+    @ApiOperation("获取测试进度")
     @PostMapping("/shu/exam/getExamPageNo")
     public String getExamPageNo(Integer userId,Integer examId) throws JSONException {
         logger.info("/shu/exam/getExamPageNo,获取测试进度接口,参数：examId = "+examId+", userId = "+userId);
@@ -88,6 +93,7 @@ public class MpExamController {
      * @param examId
      * @return
      */
+    @ApiOperation("获取测试问题")
     @PostMapping("/shu/exam/getQuestionList")
     public String getQuestionList(Integer examId) throws JsonProcessingException, JSONException {
         logger.info("/shu/exam/getQuestionList,获取问题接口,参数：examId = "+examId);
@@ -101,7 +107,7 @@ public class MpExamController {
         for(MpQuestion e:list){
             JSONObject jsonObject = new JSONObject();
             //若该问题没有被禁止
-            if(e.getIsBan()!=1){
+            if(e.getStatus()!=0){
                 jsonObject.put("examId",e.getExamId());
                 jsonObject.put("questionId",e.getId());
                 jsonObject.put("questionType",e.getType());
@@ -115,7 +121,7 @@ public class MpExamController {
                 JSONArray jsonArray2=new JSONArray();
                 for(MpOption op:list2){
                     //若该选项没有被禁止
-                    if(op.getIsBan()!=1){
+                    if(op.getStatus()!=0){
                         JSONObject json2=new JSONObject();
                         json2.put("questionId",op.getQuestionId());
                         json2.put("content",op.getContent());
@@ -124,7 +130,6 @@ public class MpExamController {
                     }
                 }
                 jsonObject.put("options",jsonArray2);
-
             }
             jsonArray.put(jsonObject);
         }
@@ -140,6 +145,7 @@ public class MpExamController {
      * @param pageNo
      * @return
      */
+    @ApiOperation("单选题答题接口")
     @PostMapping("/shu/exam/danxue_Answer")
     public void danxueAnswer(Integer userId,Integer examId,Integer questionId,Integer optionId,Integer pageNo) throws JSONException {
         logger.info("/shu/exam/danxue_Answer,单选题答题接口，参数：userId="+userId+",examId="+examId+", questionId="+questionId+", optionId="+optionId+",pageNo="+pageNo);
@@ -152,7 +158,7 @@ public class MpExamController {
 
         //根据examId查询题目个数
         QueryWrapper<MpQuestion> query3=new QueryWrapper<>();
-        query3.eq("exam_id",examId).eq("is_ban",0);
+        query3.eq("exam_id",examId).eq("status",1);
         List<MpQuestion> questionlist = examQuestionMapper.selectList(query3);
 
         //查询该用户没做完的记录
@@ -227,6 +233,7 @@ public class MpExamController {
      * @param pageNo
      *
      */
+    @ApiOperation("多选题答题接口")
     @PostMapping("/shu/exam/duoxue_Answer")
     public void duoxue_Answer(Integer userId,Integer examId,Integer questionId,Integer[] optionIds,Integer pageNo){
         logger.info("/shu/exam/duoxue_Answer,多选题答题接口，参数：userId="+userId+",examId="+examId+", questionId="+questionId+", optionIds="+optionIds.toString()+",pageNo="+pageNo);
@@ -339,6 +346,7 @@ public class MpExamController {
      * @param examId
      * @return
      */
+    @ApiOperation("测试结果接口")
     @PostMapping("/shu/exam/result")
     public String result(Integer userId,Integer examId) throws JSONException {
         logger.info("/shu/exam/result,测试结果接口，参数：userId="+userId+",examId="+examId);
@@ -383,6 +391,7 @@ public class MpExamController {
      * @param userId
      * @return
      */
+    @ApiOperation("获取全部测试的历史记录接口")
     @PostMapping("/shu/exam/history")
     public String getHistoryList(Integer userId) throws JSONException {
         logger.info("/shu/exam/history,获取全部测试的历史记录。参数：userId = "+userId);
@@ -421,6 +430,7 @@ public class MpExamController {
      * @param examId
      * @return
      */
+    @ApiOperation("用户选择的答案分析接口")
     @PostMapping("/shu/exam/questionAnalyse")
     public String questionAnalyse(Integer userId,Integer examId) throws JSONException {
         logger.info("/shu/exam/questionAnalyse,答案分析接口。参数：userId = "+userId+",examId = "+examId);
@@ -431,7 +441,6 @@ public class MpExamController {
         query.eq("user_id",userId).isNotNull("finish_time").eq("exam_id",examId).orderByDesc("finish_time");
         List<MpUserExam> userExamEntities = userExamMapper.selectList(query);
         Integer userExamId = userExamEntities.get(0).getId();
-
 
         //根据examid获取对应的所有questionid
         QueryWrapper<MpQuestion> query2=new QueryWrapper<>();
@@ -464,7 +473,6 @@ public class MpExamController {
                 for(MpUserOption ue:uOption){
                     choiceIds.add(ue.getOptionId());
                 }
-
                 //根据questionId,查询正确选项集合
                 QueryWrapper<MpOption> query4 = new QueryWrapper<>();
                 query4.eq("question_id",qid).eq("score",1);
@@ -475,7 +483,6 @@ public class MpExamController {
                         rightIds.add(object.getId());
                     }
                 }
-
                 //将正确选项集合与用户选择的数组进行对比
                 boolean isSame;
                 if(choiceIds.size() == rightIds.size()){
@@ -484,7 +491,6 @@ public class MpExamController {
                 }else{
                     isSame = false;
                 }
-
                 if(isSame){
                     json.put("isAnswerCorrect",1);
                 }else{
@@ -501,6 +507,7 @@ public class MpExamController {
      * @param questionId
      * @return
      */
+    @ApiOperation("用户选择的选项分析接口")
     @PostMapping("/shu/exam/optionAnalyse")
     public String optionAnalyse(Integer userExamId,Integer questionId) throws JSONException {
         logger.info("/shu/exam/optionAnalyse,用户选择的选项分析接口,参数：questionId="+questionId);
@@ -520,12 +527,10 @@ public class MpExamController {
                 choiceIds.add(ue.getOptionId());
             }
         }
-
         //根据question_id查询问题内容
         MpQuestion MpQuestion = examQuestionMapper.selectById(questionId);
         json.put("question_name",MpQuestion.getName());
         jsonArray.put(json);
-
         //根据question_id查询选项内容
         QueryWrapper<MpOption> query1=new QueryWrapper<>();
         query1.eq("question_id",questionId);

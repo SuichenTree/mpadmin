@@ -7,6 +7,8 @@ import com.shu.mpadmin.entity.MpUser;
 import com.shu.mpadmin.mapper.MpUserMapper;
 import com.shu.mpadmin.service.MpUserService;
 import com.vdurmont.emoji.EmojiParser;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -17,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 
+@Api(tags = "微信小程序-User用户接口")
 @RestController
 public class MpUserController {
 
@@ -39,6 +42,7 @@ public class MpUserController {
      * @return
      * @throws Exception
      */
+    @ApiOperation("电话注册接口")
     @PostMapping("/shu/user/register")
     public String register(String phone,String password) throws Exception {
         logger.info("注册接口，参数： password ="+password+", phone = "+phone);
@@ -64,6 +68,7 @@ public class MpUserController {
      * @return
      * @throws JSONException
      */
+    @ApiOperation("电话登录接口")
     @PostMapping("/shu/user/login")
     public String login(String phone,String password) throws JSONException {
         logger.info("登录接口，参数：phone="+phone+", pass="+password);
@@ -92,6 +97,7 @@ public class MpUserController {
      * @return
      * @throws JSONException
      */
+    @ApiOperation("电话登录-重置密码接口")
     @PostMapping("/shu/user/resetPass")
     public String resetPass(String phone,String password,String passNewpassword) throws JSONException {
         logger.info("重置密码接口，参数：phone ="+phone+", password ="+password+", passNewword ="+passNewpassword);
@@ -122,6 +128,7 @@ public class MpUserController {
      * 1.传入code，得到用户的openId和unionId
      * 2.注册或登录用户
      */
+    @ApiOperation("微信登录用户-初始化信息接口")
     @PostMapping("/shu/user/initUserInfo")
     public String initUserInfoByWX(String code,String head,String name,Integer gender,String address) throws Exception {
         logger.info("/shu/user/initUserInfo,初始化用户接口,参数 code="+code+",head = "+head+",name="+name+",gender="+gender+",address="+address);
@@ -192,6 +199,7 @@ public class MpUserController {
     /**
      * 保存用户个人信息
      * **/
+    @ApiOperation("保存用户个人信息接口")
     @PostMapping("/shu/user/saveUserInfo")
     public String saveUserINFO(Integer userId,String head,String name,Integer gender,Integer age,String address,String phone,String email) throws JSONException {
         logger.info("/shu/user/saveUserInfo，保存用户个人信息接口 ，参数：head="+head+", name="+name+",gender="+gender+",age="+age+",address="+address+",phone="+phone+",email="+email);
@@ -232,6 +240,7 @@ public class MpUserController {
      * 获取用户个人信息接口
      * @param userId
      */
+    @ApiOperation("获取用户个人信息接口")
     @PostMapping("/shu/user/getUserInfo")
     public String getUserINFO(Integer userId) throws JSONException, JsonProcessingException {
         logger.info("获取用户个人信息接口，/shu/user/getUserInfo ，参数：userId = "+userId);

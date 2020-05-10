@@ -22,12 +22,12 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
                 .select()
                 //扫描指定包中的注解
-                .apis(RequestHandlerSelectors.basePackage("com.shu.mpadmin.controller.admin"))
+                .apis(RequestHandlerSelectors.basePackage("com.shu.mpadmin.controller"))
                 .build();
     }
     //设置Swagger文档中的作者信息等
     private ApiInfo apiInfo() {
-        Contact contact = new Contact("suichen", "https://suichentree.github.io/", "18271801652@163.com");
+        Contact contact = new Contact("suichen个人博客", "https://suichentree.github.io/", "18271801652@163.com");
         return new ApiInfoBuilder()
                 .title("Suichen后台Api接口文档")
                 .description("小程序后台的接口文档")

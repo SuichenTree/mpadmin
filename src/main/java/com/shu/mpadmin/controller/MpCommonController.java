@@ -1,5 +1,7 @@
 package com.shu.mpadmin.controller;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
+@Api(tags = "微信小程序-公共接口")
 @RestController
 public class MpCommonController {
 
@@ -23,6 +26,13 @@ public class MpCommonController {
 
     //日志记录器
     private static final Logger logger = LoggerFactory.getLogger(MpUserController.class);
+
+    /*
+     *   增加-接口类型：POST
+     *   删除-接口类型：DELETE
+     *   修改-接口类型：PUT
+     *   查找-接口类型：GET
+     * */
 
     /**
      * 获取openID方法
@@ -52,6 +62,7 @@ public class MpCommonController {
      * @throws IOException
      * @throws JSONException
      */
+    @ApiOperation("获取小程序的accessToken")
     @GetMapping("/shu/common/getAccessToken")
     public String getAccessToken() throws IOException, JSONException {
         logger.info("/shu/common/getAccessToken,获取小程序的accessToken接口");

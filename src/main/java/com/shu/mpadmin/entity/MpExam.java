@@ -23,6 +23,8 @@ public class MpExam {
     private Date createTime;
     @TableField("is_ban")
     private Integer isBan;
+    @TableField("status")
+    private Integer status;
 
     public MpExam(){}
 
@@ -66,14 +68,23 @@ public class MpExam {
         this.isBan = isBan;
     }
 
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
-        return "ExamEntity{" +
+        return "MpExam{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", type='" + type + '\'' +
                 ", createTime=" + createTime +
                 ", isBan=" + isBan +
+                ", status=" + status +
                 '}';
     }
 

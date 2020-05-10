@@ -26,6 +26,8 @@ public class MpOption {
     private Integer isBan;
     @TableField("score")
     private Double score;
+    @TableField("status")
+    private Integer status;
 
     public MpOption() {
     }
@@ -78,15 +80,24 @@ public class MpOption {
         this.score = score;
     }
 
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
-        return "ExamQuestionOptionEntity{" +
+        return "MpOption{" +
                 "id=" + id +
                 ", questionId=" + questionId +
                 ", content='" + content + '\'' +
                 ", createTime=" + createTime +
                 ", isBan=" + isBan +
                 ", score=" + score +
+                ", status=" + status +
                 '}';
     }
 

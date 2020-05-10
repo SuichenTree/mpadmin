@@ -28,6 +28,8 @@ public class MpQuestion {
     private Date createTime;
     @TableField("is_ban")
     private Integer isBan;
+    @TableField("status")
+    private Integer status;
 
     public MpQuestion() {
 
@@ -89,9 +91,17 @@ public class MpQuestion {
         this.isBan = isBan;
     }
 
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
-        return "ExamQuestionEntity{" +
+        return "MpQuestion{" +
                 "id=" + id +
                 ", examId=" + examId +
                 ", name='" + name + '\'' +
@@ -99,6 +109,7 @@ public class MpQuestion {
                 ", typeId=" + typeId +
                 ", createTime=" + createTime +
                 ", isBan=" + isBan +
+                ", status=" + status +
                 '}';
     }
 
