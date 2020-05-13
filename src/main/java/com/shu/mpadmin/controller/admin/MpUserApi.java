@@ -19,7 +19,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -128,7 +130,6 @@ public class MpUserApi {
             JSONObject json2=new JSONObject();
             json2.put("id",u.getId());
             json2.put("name",s_name);
-            json2.put("gender",u.getGender());
             if(u.getGender()==null) {
                 json2.put("gender", "未知");
             }else if(u.getGender()==1){
@@ -143,7 +144,15 @@ public class MpUserApi {
             json2.put("email",u.getEmail());
             json2.put("address",u.getAddress());
             json2.put("headUrl",u.getHeadUrl());
-
+            json2.put("isAdmin",u.getIsAdmin());
+            //转换时间格式
+            SimpleDateFormat simple = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            if(u.getLastLoginTime()!=null){
+                String format = simple.format(u.getLastLoginTime());
+                json2.put("lastLoginTime",format);
+            }else{
+                json2.put("lastLoginTime","");
+            }
             jsonArray.put(json2);
         }
         json.put("tableData",jsonArray);
